@@ -23,5 +23,8 @@
     "finalhandler": "^1.1.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }

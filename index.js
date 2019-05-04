@@ -1,14 +1,12 @@
 const express = require('express');
+const routes= require('./routers/api');
+
 
 //set up express
 const app = express();
 
-app.get('/api', function(req,res){
+app.use('/api',routes);
 
-    console.log('GET request');
-    res.send({name: 'Yoshi'});
-
-});
 
 //listen for request
 app.listen(process.env.port || 4000,function(){
