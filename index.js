@@ -3,10 +3,10 @@ const express = require('express');
 //set up express
 const app = express();
 
-app.get('/', function(req,res){
+app.get('/api', function(req,res){
 
     console.log('GET request');
-    res.end();
+    res.send({name: 'Yoshi'});
 
 });
 
