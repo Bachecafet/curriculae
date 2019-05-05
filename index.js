@@ -1,13 +1,13 @@
 const express = require('express');
 const routes= require('./routers/api');
 const bodyParser = require('body-parser');
-
-
+var path = require('path');
+var port = process.env.port || 4000;
 //set up express
 const app = express();
-
+app.set('view engine', 'html');
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname,'public')));
 app.use('/api',routes);
 
 
@@ -18,6 +18,6 @@ app.use(function(err,req,res,next){
 });
 
 //listen for request
-app.listen(process.env.port || 4000,function(){
-    console.log('Listening...\n');
+app.listen(port,function(){
+    console.log('Listening on port: ' + port);
 });
