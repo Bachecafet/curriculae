@@ -1,31 +1,39 @@
 {
-  "name": "curriculae",
+  "name": "dorasounds",
   "version": "1.0.0",
-  "description": "Curriculum Vitae",
-  "main": "index.js",
+  "description": "Progetto super segreto per reti di calcolatori",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bachecafet/curriculae.git"
+    "url": "git+https://github.com/Ebloin/Dora-project.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bachecafet/curriculae/issues"
+    "url": "https://github.com/Ebloin/Dora-project/issues"
   },
-  "homepage": "https://github.com/Bachecafet/curriculae#readme",
+  "homepage": "https://github.com/Ebloin/Dora-project#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "bootstrap": "^4.3.1",
-    "express": "^4.16.4",
-    "finalhandler": "^1.1.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.14.7"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.0"
+    "amqp": "^0.2.6",
+    "amqplib": "^0.5.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "localStorage": "^1.0.3",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.5",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-local-mongoose": "^4.4.0",
+    "passport-spotify": "^0.3.1",
+    "pug": "^2.0.0-rc.4",
+    "querystring": "^0.2.0",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.4",
+    "ws": "^3.3.2"
   }
 }

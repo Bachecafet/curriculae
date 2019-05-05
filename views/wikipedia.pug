@@ -1,0 +1,14 @@
+html
+    head
+        title=title
+        style
+            include ./../public/styles/wikipedia.css
+        h1= message
+    body
+        p
+            ul
+                each val, index in array
+                    if val != ""
+                        li=val
+                            a(class='button' href=link[index])
+                                img(id='itunes', border='1px solid black')

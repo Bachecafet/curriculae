@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title Dora Sound's
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        style
+            include ./../public/styles/stileScegliServizio.css
+    body
+        h1 #{artista}
+        a(class='button' href="/scegliServizio/itunes?artista="+ artista)
+            img(id='itunes' border='0', alt='W3Schools', src='images/itunes.png', width='300', height='300')
+        a(class='button' href="/scegliServizio/youtube?artista="+ artista)
+            img(id='youtube' border='0', alt='W3Schools', src='images/youtube.png', width='300', height='300')
+        a(class='button' href="/scegliServizio/wikipedia?artista="+ artista)
+            img(id='wikipedia' border='0', alt='W3Schools', src='images/Wikipedia.png', width='300', height='300')
+        a(class='button' href="/scegliServizio/spotify/?artista="+ artista)
+            img(id='spotify' border='0', alt='W3Schools', src='images/spotify.png', width='300', height='300')

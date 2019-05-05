@@ -1,0 +1,108 @@
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='msapplication-tap-highlight', content='no')
+		title title
+		link(href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700', rel='stylesheet', type='text/css')
+		//link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+		style
+			include ./../public/styles/carteSpotify/material-cards.css
+		style
+			include ./../public/styles/carteSpotify/bootstrap.min.css
+		style
+			include ./../public/styles/carteSpotify/font-awesome.min.css
+		style(type='text/css').
+			html {
+			position: relative;
+			min-height: 100%;
+			}
+			body {
+			background-color: #ECEFF1;
+			color: #37474F;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			}
+			h1, h2, h3 {
+			font-weight: 200;
+			}
+			.lista{
+			text-align: center;
+			}
+			.topTracks p{
+			text-align: center;
+			font-size: x-large;
+			margin-bottom: 0;
+			}
+			.track {
+			margin-bottom: 50px;
+			}
+			.play {
+			width:300px;
+			}
+			.songTitle {
+			margin-bottom: 0;
+			}
+			p{
+			text-align:center;
+			}
+	body
+		section.container
+			.page-header
+				h1
+					img(src=artista.immagine)
+					br
+			.row.active-with-click
+				each val in albums
+					.col-md-4.col-sm-6.col-xs-12
+						article.material-card.Green
+							h2
+								span #{val.nome}
+								strong
+									i.fa.fa-fw.fa-star
+									|                         #{artista.nome}
+							.mc-content
+								.img-container
+									img.img-responsive(src= val.immagine)
+								.mc-description
+									| #{val.relase}
+							a.mc-btn-action
+								i.fa.fa-bars
+							.mc-footer
+								h4
+									| Trova su spotify
+								a.fa.fa-fw.fa-spotify(href= val.link)
+			h1.h1
+				p #{artista.nome}'s top Tracks
+			.topTracks
+				each val in tracks
+					ul.lista
+						p.track
+							p.songTitle #{val.nome}
+							a(href= val.link)
+								img(src=val.immagine.url)
+							br
+							if val.preview
+								audio.play(controls='')
+									source(src=val.preview, type='audio/mpeg')
+		script(src='https://code.jquery.com/jquery-1.11.3.min.js')
+		script(type='text/javascript' src='/scripts/jquery.material-cards.min.js')
+		script.
+			$(function() {
+			$('.material-card').materialCard({
+			icon_close: 'fa-arrow-left',
+			icon_open: 'fa-bars',
+			icon_spin: 'fa-spin-fast',
+			card_activator: 'hover'
+			});
+			//        $('.active-with-click .material-card').materialCard();
+			window.setTimeout(function() {
+			$('.material-card:eq(1)').materialCard('open');
+			}, 2000);
+			$('.material-card').on('shown.material-card show.material-card hide.material-card hidden.material-card', function (event) {
+			console.log(event.type, event.namespace, $(this));
+			});
+			});
