@@ -9,31 +9,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ebloin/Dora-project.git"
+    "url": "git+https://github.com/Bachecafet/curriculae.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ebloin/Dora-project/issues"
+    "url": "https://github.com/Bachecafet/curriculae/issues"
   },
-  "homepage": "https://github.com/Ebloin/Dora-project#readme",
+  "homepage": "https://github.com/Bachecafet/curriculae#readme",
   "dependencies": {
-    "amqp": "^0.2.6",
-    "amqplib": "^0.5.2",
-    "body-parser": "^1.18.2",
+    "amqp": "^0.2.7",
+    "amqplib": "^0.5.3",
+    "body-parser": "^1.19.0",
     "express": "^4.16.4",
-    "express-session": "^1.15.6",
-    "localStorage": "^1.0.3",
+    "express-session": "^1.16.1",
+    "localStorage": "^1.0.4",
     "mongodb": "^2.2.33",
-    "mongoose": "^4.13.5",
+    "mongoose": "^4.13.18",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
     "passport-local-mongoose": "^4.4.0",
     "passport-spotify": "^0.3.1",
-    "pug": "^2.0.0-rc.4",
+    "pug": "^2.0.3",
     "querystring": "^0.2.0",
-    "request": "^2.83.0",
-    "socket.io": "^2.0.4",
-    "ws": "^3.3.2"
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0",
+    "ws": "^3.3.3"
   }
 }
