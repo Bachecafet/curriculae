@@ -2,6 +2,7 @@
 
   align-self: flex-end;
 }
-.nav-item{
-  
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
 }
