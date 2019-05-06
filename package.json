@@ -1,31 +1,31 @@
 {
-  "name": "curriculae",
-  "version": "1.0.0",
-  "description": "Curriculum Vitae",
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bachecafet/curriculae.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Bachecafet/curriculae/issues"
-  },
-  "homepage": "https://github.com/Bachecafet/curriculae#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "bootstrap": "^4.3.1",
-    "express": "^4.16.4",
-    "finalhandler": "^1.1.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.14.7"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.0"
-  }
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
