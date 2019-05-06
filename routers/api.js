@@ -3,7 +3,7 @@ const router = express.Router();
 
 //get a list of ninjas
 
-router.get('/ninjas', function(req,res){
+router.get('/', function(req,res){
     res.send({type:'GET'});
 });
 
