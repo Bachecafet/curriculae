@@ -9,7 +9,7 @@ var port = process.env.port || 4000;
 const app = express();
 app.set('view engine', 'html');
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname,'views')));
 app.use('/',routes);
 
 
