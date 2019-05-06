@@ -4,7 +4,7 @@ const router = express.Router();
 //get a list of ninjas
 
 router.get('/', function(req,res){
-    res.send({type:'GET'});
+    res.render('public/index.html');
 });
 
 /*

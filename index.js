@@ -10,7 +10,7 @@ const app = express();
 app.set('view engine', 'html');
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname,'public')));
-app.use('/',routes);
+app.use('/api',routes);
 
 
 //error handling
