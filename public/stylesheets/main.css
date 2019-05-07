@@ -6,3 +6,17 @@
   background-color: #008CBA;
   color: white;
 }
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+  margin-top: 3%;
+  background-color: rgb(228, 228, 228);
+  border-radius: 3%;
+}
+.media{
+  margin-bottom: 1%;
+}
+.body{
+  background-color: white;
+}
