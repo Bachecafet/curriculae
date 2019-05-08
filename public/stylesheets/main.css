@@ -9,15 +9,16 @@
 p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container{
-  margin-top: 3%;
+.containers{
   background-color: rgb(228, 228, 228);
   border-radius: 3%;
-  width: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
 }
 .media{
   margin-bottom: 1%;
 }
-.body{
-  background-color: white;
+img#img{
+  margin: auto;
 }
