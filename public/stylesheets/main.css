@@ -11,8 +11,8 @@ p{
 }
 .containers{
   background-color: rgb(228, 228, 228);
-  border-radius: 3%;
-  width: 80%;
+  border-radius: 5%;
+  width: 85%;
   margin: auto;
   margin-top: 3%;
 }
@@ -21,4 +21,13 @@ p{
 }
 img#img{
   margin: auto;
+}
+.paragraf{
+  margin-left: 1px;
+}
+nav{
+  margin-left: 1px;
+}
+.mr-3{
+  margin-left: 2px;
 }
