@@ -15,12 +15,12 @@ p{
   width: 85%;
   margin: auto;
   margin-top: 3%;
+  position: relative;
 }
 .media{
   margin-bottom: 1%;
 }
-img#img{
-  margin: auto;
+#img{
 }
 .paragraf{
   margin-left: 1px;
