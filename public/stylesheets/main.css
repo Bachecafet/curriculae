@@ -41,6 +41,7 @@ nav{
     text-align: left;
   }
   #img{
-    width: 30px;
+    width: auto;
+    height: auto;
   }
 }
