@@ -34,6 +34,6 @@ nav{
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .table { 
-    display: inline;
+    text-align: left;
   }
 }
